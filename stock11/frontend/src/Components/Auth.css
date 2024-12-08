@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+
+/* Your other CSS styles here */
+
+/* Animated heading for "InvestIQ" */
+.animated-heading {
+  font-size: 96px; /* Large font size */
+  font-family: 'Dancing Script', cursive; /* Elegant cursive font */
+  font-weight: bold;
+  color: #000; /* Black color */
+  text-align: center; /* Center the text */
+  margin: 0; /* Remove margins */
+  animation: fadeInSlide 3s infinite ease-in-out; /* Apply animation */
+}
+
+/* Fade-in and slide animation */
+@keyframes fadeInSlide {
+  0% {
+    opacity: 0; /* Invisible at the start */
+    transform: translateY(-20px); /* Slide up */
+  }
+  50% {
+    opacity: 1; /* Fully visible at midpoint */
+    transform: translateY(0); /* Normal position */
+  }
+  100% {
+    opacity: 0; /* Invisible at the end */
+    transform: translateY(20px); /* Slide down */
+  }
+}
